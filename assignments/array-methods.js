@@ -91,6 +91,25 @@ console.log("total donations: " + ticketPriceTotal);
 
 // Problem 1
 
+let subscriber = [];
+
+runners.forEach(runners => subscriber.push(runners.first_name + ' ' + runners.email));
+
+console.log("subscriber list: " + subscriber);
+
 // Problem 2
 
+let amtShirtSize = runners.filter((runners) => {
+    return runners.shirt_size === "M"
+});
+
+console.log("Number of people with medium shirts: " + amtShirtSize.length);
+
+
 // Problem 3
+
+let sponsors = [];
+
+runners.map(runners => sponsors.push(runners.company_name));
+
+console.log("race sponsors: " + sponsors); 

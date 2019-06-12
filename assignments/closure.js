@@ -1,6 +1,13 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+let howOld = 0;
 
+function howLongAdult (age) {
+  howOld = age;
+  return "You will be an adult in " + (18 - howOld) + " years.";
+};
+
+console.log(howLongAdult(10));
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
